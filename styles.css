@@ -5,7 +5,9 @@
     src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
 }
 
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: dark) {
+
+}
 
 html {
     text-align: center;
@@ -20,11 +22,13 @@ body {
     color-scheme: light dark;
 }
 
+/* ---- */
+
 header {
     background-color: goldenrod;
     color: rgb(56, 55, 55);
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 main {
@@ -33,6 +37,7 @@ main {
     font-weight: bolder;
     border-radius: 10px;
     padding: 100px;
+    width: auto;
 }
 
 aside {
@@ -47,5 +52,25 @@ footer {
     background-color: red;
     color: whitesmoke;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 3px;
+}
+
+#border{
+    border: 10px solid;
+    padding: 50px;
+}
+
+
+/* Világos mód esetén: sötét keret */
+@media (prefers-color-scheme: light) {
+  #border {
+    border-color: #000; /* fekete */
+  }
+}
+
+/* Sötét mód esetén: világos keret */
+@media (prefers-color-scheme: dark) {
+  #border {
+    border-color: #fff; /* fehér */
+  }
 }
