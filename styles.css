@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "San Francisco Display Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
+}
+
+@media (prefers-color-scheme: dark) {}
+
+html {
+    text-align: center;
+    font-family: San Francisco Display Medium;
+}
+
+/* A háttér a böngésző témája szerint változik */
+
+body {
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+}
+
+header {
+    background-color: goldenrod;
+    color: rgb(56, 55, 55);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+main {
+    background-color: purple;
+    color: whitesmoke;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+aside {
+    background-color: aquamarine;
+    color: rgb(56, 55, 55);
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 100px;
+}
+
+footer {
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bolder;
+    border-radius: 10px;
+}
